@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+    <style>
+        .F {
+            color: white;
+            width: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+  <table>
+      <tr>
+          <th>Amount</th>
+          <th style="width:300px">From Currency</th>
+          <th style="width:300px">To Currency</th>
+      </tr>
+      <tr>
+          <td>
+              <input type="number" style="width:260px" id="sotien" placeholder="Nhập tiền cần đổi"/>
+          </td>
+          <td>
+              <select style="width: 300px" id="quydoi1">
+                  <option value="c">VietNam</option>
+                  <option value="d">Mĩ</option>
+                  <option value="e">Euro</option>
+              </select>
+          </td>
+          <td>
+              <select style="width: 300px" id="quydoi2">
+                  <option value="c">VND</option>
+                  <option value="d">USD</option>
+                  <option value="e">Euro</option>
+              </select>
+          </td>
+          <td>
+               <button class="F" onclick="doi()">Convert</button>
+          </td>
+      </tr>
+  </table>
+<script>
+    function doi() {
+        let dauvao = document.getElementById("sotien").value;
+        let A = document.getElementById("quydoi1").value;
+        let B = document.getElementById("quydoi2").value
+        if(A==B) {
+            alert(dauvao);
+        }
+        if(A == "c" && B == "d") {
+            alert(dauvao/24500);
+        }
+        if(A == "c" && B =="e") {
+            alert(dauvao/23500);
+        }
+        if(A == "d" && B =="c") {
+            alert(dauvao*24500);
+        }
+        if(A == "d" && B == "e") {
+            alert(dauvao*24500/23500);
+        }
+        if(A == "e" && B == "c") {
+            alert(dauvao*23500);
+        }
+        if(A =="e" && B == "d") {
+            alert(dauvao*23500/24500)
+        }
+    }
+</script>
+</body>
+</html>

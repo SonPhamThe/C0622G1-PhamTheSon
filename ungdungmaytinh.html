@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1> Caculator </h1>
+<input type="number" id="select1">
+<input type="number" id="select2"> <br> <br>
+<button onclick="cong()">Addition(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(X)</button>
+<button onclick="chia()">Division(/)</button>
+<script>
+    function cong() {
+        let a = document.getElementById("select1").value;
+        let b = document.getElementById("select2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        let c = a+b;
+        alert(c);
+    }
+    function tru() {
+        let a = document.getElementById("select1").value;
+        let b = document.getElementById("select2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        let c = a-b;
+        alert(c);
+    }
+    function nhan() {
+        let a = document.getElementById("select1").value;
+        let b = document.getElementById("select2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        let c = a*b;
+        alert(c);
+    }
+    function chia() {
+        let a = document.getElementById("select1").value;
+        let b = document.getElementById("select2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        let c = a/b;
+        alert(c);
+    }
+</script>
+</body>
+</html>
