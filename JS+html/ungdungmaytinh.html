@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<h1> Caculator </h1>
+<input type="number" id="select1">
+<input type="number" id="select2"> <br> <br>
+<button onclick="tinhToan('add')">Addition(+)</button>
+<button onclick="tinhToan('sub')">Subtraction(-)</button>
+<button onclick="tinhToan('mul')">Multiplication(X)</button>
+<button onclick="tinhToan('div')">Division(/)</button>
+<script>
+    function tinhToan(value) {
+        let a = document.getElementById("select1").value;
+        let b = document.getElementById("select2").value;
+        a = parseInt(a);
+        b = parseInt(b);
+        if (value == 'add') {
+            alert(a + b);
+        }
+        if (value == 'sub') {
+            alert(a - b);
+        }
+        if (value == 'mul') {
+            alert(a * b);
+        }
+        if (value == 'div') {
+            alert(a / b);
+        }
+    }
+</script>
+</body>
+</html>
