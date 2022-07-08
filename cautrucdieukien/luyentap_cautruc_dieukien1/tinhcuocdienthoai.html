@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    let money = prompt("Nhập số giây căn hộ đã gọi: ");
+    let total = money * 50;
+    let total1 = total + 10000;
+    let total2 = total1 + 50000;
+    if (money < 100000) {
+        alert("Cước điện thoại tháng này là: " + total);
+    } else {
+        if (money < 5000000) {
+            alert("Cuớc điện thoại tháng này là: " + total1);
+        } else {
+            if (money < 1000000) {
+                alert("Cước điện thoại tháng này là: " + total2);
+            }
+        }
+    }
+</script>
+</body>
+</html>

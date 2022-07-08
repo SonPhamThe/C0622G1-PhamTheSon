@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let wage = +prompt("Nhập thu nhập cá nhân tại đây:");
+    let tax = wage*0.07;
+    let tax1 = wage*0.1;
+    let tax2 = wage*0.15
+    if(wage>0 && wage<=5000000) {
+        alert(tax);
+    } else {
+        if(wage>5000000 && wage<=10000000) {
+            alert(tax1);
+        } else {
+            if(wage>10000000 && wage<=100000000) {
+                alert(tax2);
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoa hồng bán hàng</title>
+</head>
+<body>
+<script>
+    let turnover = prompt("Doanh số bán hàng: ");
+    let rose = turnover * 0.1;
+    let rose1 = rose + 500000;
+    let rose2 = rose1 + 5000000;
+    if (turnover < 1000000) {
+        alert("Hoa hồng được nhận: " + rose);
+    } else {
+        if (turnover < 10000000) {
+            alert("Hoa hồng được nhận: " + rose1);
+        } else {
+            if (turnover < 100000000) {
+                alert("Hoa hồng được nhận: " + rose2);
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<script>
+    let value = prompt("Nhập chữ điện: ");
+    let money = value*1678;
+    let money1 = value*1734;
+    let money2 = value*2014;
+    if(value>0 && value<=50) {
+        alert(money);
+    } else {
+        if(value>50 && value<=100) {
+            alert(money1);
+        } else {
+            if(value>100 && value<=200) {
+                alert(money2);
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm GTLN 3 số nhập vào</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số thứ nhất: ");
+    let b = +prompt("Số thứ hai: ");
+    let c = +prompt("Số thứ ba: ");
+    if(a>b) {
+        if(a>c) {
+            alert("Số lớn nhất là: " +a);
+        } else {
+            alert("Số lớn nhất là: " +c);
+        }
+    } else if(c>b) {
+        alert("Số lớn nhất là: " +c);
+    } else {
+        alert("Số lớn nhất là " +b);
+    }
+</script>
+</body>
+</html>

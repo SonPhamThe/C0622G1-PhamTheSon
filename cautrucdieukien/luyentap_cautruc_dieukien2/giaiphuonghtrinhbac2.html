@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập hệ số a")*1;
+    let b = prompt("Nhập hệ số b")*1;
+    let c = prompt("Nhập hệ số c")*1;
+    let x1 = -c/b;
+    let delta = b*b - 4 * a * c;
+    let x2 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x3 = (-b - Math.sqrt(delta)) / (2 * a);
+    if (a == 0) {
+        if (b != 0) {
+            alert("Phương trình có nghiệm: " + x1);
+        } else {
+            if (b == 0 && c == 0) {
+                alert("Phương trình vô số nghiệm: ");
+            } else {
+                if (b == 0 && c != 0) {
+                    alert("Phương trình vô nghiệm");
+                }
+            }
+        }
+    } else {
+            alert("Phương trình có nghiệm thứ nhất là: " + x2);
+            alert("Phương trình có nghiệm thứ hai là: " + x3);
+    }
+
+</script>
+</body>
+</html>
