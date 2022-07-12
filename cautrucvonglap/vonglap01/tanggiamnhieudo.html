@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tang giam nhiet do</title>
+  </head>
+  <body>
+    <script>
+      let temp = prompt("Nhap nhiet do hien tai: ");
+      while (temp < 20 || temp > 100) {
+        if (temp < 20) {
+          alert("Tang nhiet do");
+          temp = prompt("Nhap nhiet do hien tai: ");
+        } else if (temp > 100) {
+          alert("Giam nhiet do");
+          temp = prompt("Nhap nhiet do hien tai: ");
+        }
+        alert("Nhiet do binh thuong");
+      }
+    </script>
+  </body>
+</html>

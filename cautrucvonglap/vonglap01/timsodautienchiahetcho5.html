@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim so dau tien chia het cho 5</title>
+  </head>
+  <body>
+    <script>
+      let number1 = 0,
+        number2 = 0,
+        number3 = 0;
+      let div5 = "";
+      let fibonacci = "";
+      for (let i = 0; i < 20; i++) {
+        if (i == 0) {
+          number2 = 1;
+          number3 = 1;
+          fibonacci += number3 + " ";
+        } else {
+          number3 = number1 + number2;
+          number1 = number2;
+          number2 = number3;
+          fibonacci += number3 + " ";
+          console.log(i + " = " + number3);
+          if (number3 % 5 == 0) {
+            div5 = number3;
+            break;
+          }
+        }
+      }
+      document.write("So dau tien chia het cho 5 la: " + div5);
+    </script>
+  </body>
+</html>
