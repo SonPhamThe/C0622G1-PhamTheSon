@@ -30,8 +30,30 @@
                 number = 0;
                 break;
               } else {
-                count++;
+                if (number > 0) {
+              so_nguyen_to.push(i);
+              count++;
+              if (count == soluong) {
+                break;
               }
+            }
+          }
+        }
+
+        return so_nguyen_to;
+      }
+
+      function soLuongSoNguyenTo() {
+        let so_luong = +prompt("Nhập số lượng số nguyên tố cần tìm ");
+        let so_nguyen_to = tinhSoNguyenTo(so_luong);
+        document.write(
+          "Hiển thị " +
+            so_luong +
+            " số nguyên tố đầu tiên gồm soNguyenTo[" +
+            so_nguyen_to +
+            "]"
+        );
+      }  }
             }
 
             if (number > 0) {
