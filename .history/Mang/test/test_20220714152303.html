@@ -7,13 +7,20 @@
   </head>
   <body>
     <script>
-      function orderFruit() {
-        let total = 0;
-        // Call another function to place order
-        return total;
+      let num = +prompt("So luong so nguyen to hien thi: ");
+      let showNumber = "";
+      let i = 2;
+      let count = 1;
+      while(count<=num) {
+        let j =1;
+        let check =0;
+        while(j<=i) {
+          if(!(i%j)) {
+            check++
+          }
+          j++;
+        }
       }
-      let result = orderFruit;
-      alert("The total is " + result);
     </script>
   </body>
 </html>
