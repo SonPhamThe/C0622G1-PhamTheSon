@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So nguyen to</title>
+  </head>
+  <body>
+    <script>
+      let num = +prompt("Nhap so luong so nguyen to hien thi: ")
+      let shownumber = "";
+      let i = 2;
+      let count = 1
+      while(count<=num) {
+        let j = 1
+        let check =0;
+        while(j<=i) {
+          if(!(i%j)) {
+            check++
+          }
+          j++;
+        }
+        if(check==2) {
+          count++;
+        }
+        i++;
+      }
+    </script>
+  </body>
+</html>

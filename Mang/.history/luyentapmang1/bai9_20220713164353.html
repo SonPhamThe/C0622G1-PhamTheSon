@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 9</title>
+  </head>
+  <body>
+    <script>
+      let result = new Array();
+      let result1 = new Array();
+      let result2 = new Array();
+      for (i = 0; i < 10; i++) {
+        let a = prompt("Nhap mot so bat ki: ");
+        result.push(a);
+      }
+      for (i = 0; i < 10; i++) {
+        let b = prompt("Nhap mot so bat ki: ");
+        result1.push(b);
+      }
+      result2 = result.concat(result1);
+      document.write(result2);
+    </script>
+  </body>
+</html>

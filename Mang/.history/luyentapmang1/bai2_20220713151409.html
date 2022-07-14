@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 2</title>
+  </head>
+  <body>
+    <script>
+      let result = [];
+      let max;
+      let index = 0;
+      for (i = 0; i < 10; i++) {
+        let num = +prompt("Nhap mot so bat ki: ");
+        result.push(num);
+        if (max < result[i] || i == 0) {
+        max = result[i];
+        index = i;
+        }
+      }
+      document.write(result);
+      document.write("Gia tri lon nhat la:" + max + "tai vi tri" + index);
+    </script>
+  </body>
+</html>

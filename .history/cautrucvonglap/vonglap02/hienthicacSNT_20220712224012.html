@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number = +prompt("Nhap so luong so nguyen to can hien thi: ");
+      let shownumber = "";
+      let i = 2;
+      let amount = 1;
+      while (amount <= number) {
+        let j = 1;
+        let check = 0;
+        while (j <= i) {
+          if (!(i % j)) {
+            check++;
+          }
+          j++;
+        }
+        if (check == 2) {
+          shownumber += i + ",";
+          amount++;
+        }
+        i++;
+      }
+      document.write(shownumber+"")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So nguyen to</title>
+  </head>
+  <body>
+    <script>
+      let chuoi1 = +prompt("Nhap chuoi 1: ");
+      let chuoi2 = +prompt("Nhap chuoi 2: ");
+      let soSanh = true;
+      if (chuoi1.length != chuoi2.length) {
+        document.write("2 chuoi khong giong nhau");
+      } else {
+        for (i = 0; i < chuoi1.length; i++) {
+          for (j = 0; j < chuoi2.length; j++) {
+            if(chuoi1[i]==chuoi2[j]) {
+              soSanh == true;
+            } else {
+              soSanh == false;
+            }
+          }
+        }
+        if(soSanh==false) {
+        document.write("2 chuoi khong giong nhau")
+      } else {
+        document.write("2 chuoi giong nhau")
+      }
+      }
+     
+    </script>
+  </body>
+</html>

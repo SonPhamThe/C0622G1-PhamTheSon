@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 4</title>
+  </head>
+  <body>
+    <script>
+      let length = +prompt("Nhap do dai mang: ")
+      let result = [];
+      for (i = 0; i < length; i++) {
+        let num = +prompt("Nhap mot so bat ki: ");
+        result.push(+prompt("Nhap mot so bat ki: "));
+      }
+      let first = 0;
+      let last = result.length;
+      while (first < last) {
+        let b = result[first];
+        result[first] = result[last];
+        result[last] = b;
+        first++;
+        last--;
+      }
+      document.write(result);
+    </script>
+  </body>
+</html>
