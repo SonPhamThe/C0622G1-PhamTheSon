@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 5</title>
+  </head>
+  <body>
+    <script>
+      let star = [
+        "Polaris",
+        "Aldebaran",
+        "Deneb",
+        "Vega",
+        "Altair",
+        "Dubhe",
+        "Regulus",
+      ];
+      let constellation = [
+        "Ursa Minor",
+        "Tarurus",
+        "Cygnus",
+        "Lyra",
+        "Aquila",
+        "Ursa Major",
+        "Leo",
+      ];
+      function takeArray(string) {
+        for (i = 0; i < star.length; i++) {
+          for (j = 0; i < constellation.length; j++) {
+            if (string = star[i]) {
+              alert(constellation[j])
+              return constellationp[j];
+            } else {
+              alert("Khong tim thay chom sao tuong ung!")
+            }
+          }
+        }
+      }
+      let inputStar = prompt("Nhap ten ngoi sao tim kiem: ");
+      takeArray()
+    </script>
+  </body>
+</html>

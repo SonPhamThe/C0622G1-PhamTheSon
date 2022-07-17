@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 3</title>
+  </head>
+  <body>
+    <script>
+      function sumNumber(x, y) {
+        let total = 0;
+        if (x > y) {
+          alert("Tham so thu nhat lon hon tham so thu hai");
+        } else {
+          total = x + y;
+          alert("Tong hai tham so la: " + total);
+          return total;
+        }
+      }
+      let inputX = +prompt("Nhap tham so thu nhat: ");
+      let inputY = +prompt("Nhap tham so thu hai: ");
+      sumNumber(inputX, inputY);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HyperText Markup Language</title>
+  </head>
+  <body>
+    <script>
+      function getStar(string) {
+        let ngoiSao = [
+          "Polaris",
+          "Aldebaran",
+          "Deneb",
+          "Vega",
+          "Altair",
+          "Dubhe",
+          "Regulus",
+        ];
+        let chomSao = [
+          "Ursa Minor",
+          "Tarurus",
+          "Cygnus",
+          "Lyra",
+          "Aquila",
+          "Ursa Major",
+          "Leo",
+        ];
+        for (let i = 0; i < ngoiSao.length; i++) {
+          for (let j = 0; j < chomSao.length; j++) {
+            if (string === ngoiSao[i]) {
+              return chomSao[j];
+            } else {
+              return "Không tìm thấy sao ";
+            }
+          }
+        }
+      }
+      let nameOfStar = prompt("Nhập tên ngôi sao");
+      alert(getStar(nameOfStar));
+    </script>
+  </body>
+</html>

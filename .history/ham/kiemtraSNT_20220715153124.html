@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiem tra so nguyen to</title>
+  </head>
+  <body>
+    <script>
+      function isPrime(number) {
+        let number = +pro("Nhap so can kiem tra: ");
+        if (number > 2) {
+          for (let i = 2; i < number; i++) {
+            if (number % i != 0) {
+              alert("So vua nhap la so nguyen to: ");
+              return number;
+            } else {
+              alert("So vua nhap la so nguyen to: ");
+            }
+          }
+        } else if (number == 2) {
+          alert("So vua nhap la so nguyen to: ");
+        } else {
+          alert("So vua nhap khong phai la so nguyen to: ");
+        }
+      }
+      isPrime();
+    </script>
+  </body>
+</html>

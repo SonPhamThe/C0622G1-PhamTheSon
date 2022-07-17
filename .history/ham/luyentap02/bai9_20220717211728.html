@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 9</title>
+  </head>
+  <body>
+    <script>
+      function getNewArray(array) {
+        let count = 0;
+        let index = 0;
+        array = [];
+        let length = +prompt("Nhap vao do dai mang");
+        for (let i = 0; i < length; i++) {
+          array.push(prompt("Nhap vao mot ki tu bat ki"));
+        }
+        for (j = 0; i < length; j++) {
+          index = array.indexOf(array, index);
+          if (index > -1) {
+            count++;
+          }
+        }
+        document.write("So lan xuat hien cua"+array+"la"+count);
+      }
+      let newArray;
+      
+    </script>
+  </body>
+</html>
