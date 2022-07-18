@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 9</title>
+  </head>
+  <body>
+    <script>
+      function getNewArray(array) {
+        array = [];
+        let length = +prompt("Nhap vao do dai mang");
+        let kytu = prompt("Nhap vao ki tu can kiem tra");
+        for (let i = 0; i < length; i++) {
+          array.push(prompt("Nhap vao mot ki tu bat ki"));
+        }
+        let kiemTra = mangKiemTra(kytu, array);
+        if (kiemtra >0){
+            document.write("Có "+kiemtra+" ký tự "+kytu+" trong mảng")
+        }else{
+            document.write("Không có dữ liệu trong mảng")
+        }
+    }
+    function mangKiemTra(kytu, array) {
+        let count=0
+        for (let i=0; i<mang.length; i++){
+            if (kytu == mang[i]) {
+                count++
+            }
+        }
+        if(count>0){
+            return count;
+        }
+        return -1
+    }
+    </script>
+  </body>
+</html>

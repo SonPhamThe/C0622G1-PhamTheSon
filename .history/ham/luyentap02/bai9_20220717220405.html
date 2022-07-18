@@ -7,24 +7,23 @@
   </head>
   <body>
     <script>
-      function getArray() {
-        let array = [];
-        let length = +prompt("Nhap do dai mang:");
-        for (i = 0; i < length; i++) {
-          array.push(prompt("Nhap mot phan tu bat ki"));
+      function getNewArray(array) {
+        array = [];
+        let length = +prompt("Nhap vao do dai mang");
+        let kytu = prompt("Nhap vao ki tu can kiem tra");
+        for (let i = 0; i < length; i++) {
+          array.push(prompt("Nhap vao mot ki tu bat ki"));
         }
-        let kytu = prompt("Nhập vào 1 ký tự bất kỳ");
-        document.write("Mảng gồm [" + array + "]<br>");
-        let kiemtra = kiemTraMang(kytu, array);
+        let kiemTra = mangKiemTra(kytu, array);
         if (kiemtra > 0) {
           document.write("Có " + kiemtra + " ký tự " + kytu + " trong mảng");
         } else {
           document.write("Không có dữ liệu trong mảng");
         }
       }
-      function kiemTraMang(kytu, array) {
+      function mangKiemTra(kytu, array) {
         let count = 0;
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i < length; i++) {
           if (kytu == array[i]) {
             count++;
           }
@@ -34,8 +33,8 @@
         }
         return -1;
       }
-      getArray();
-      kiemTraMang();
+      getNewArray();
+      
     </script>
   </body>
 </html>
