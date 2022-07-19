@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HyperText Markup Language</title>
+  </head>
+  <body>
+    <script>
+      function getArray(array) {
+        array = [];
+        let count = 0;
+        let kyTu = prompt("Nhap mot ki tu de kiem tra");
+        let length = +prompt("Nhap do dai mang");
+        for (i = 0; i < length; i++) {
+          let kyTu1 = prompt("Nhap mot ki tu de them vao mang");
+          array.push(kyTu1);
+          if (kyTu == array[i]) {
+            count++;
+          }
+        }
+        if(count>0) {
+          document.write("Phan tu "+kyTu+"xuat hien "+count+"")
+        }
+      }
+    </script>
+  </body>
+</html>

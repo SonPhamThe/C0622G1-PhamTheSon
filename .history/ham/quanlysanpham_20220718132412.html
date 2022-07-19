@@ -6,7 +6,7 @@
     <title>Quan ly san pham</title>
   </head>
   <body>
-    <form action="javascript:void(0);" method="POST" onsubmit="listPhone.add( )">
+    <form action="javascript:void(0);" method="POST" onsubmit="listPhone.add()">
       <input type="text" id="add" placeholder="Thêm sản phẩm" />
       <input type="submit" value="Thêm" />
     </form>
@@ -35,7 +35,7 @@
     </form>
 
     <script>
-      let Phone = function () {
+      let Phone   = function () {
         this.listPhone = ["Nokia", "Iphone", "Samsung", "LG"];
         this.product = document.getElementById("product");
 
