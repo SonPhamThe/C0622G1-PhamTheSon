@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let length;
+      do {
+        length = +prompt("Nhap do dai cua mang");
+        if (!(length > 0 && length % 1 == 0)) {
+          alert("Nhap lai");
+        }
+      } while (!(length > 0 && length % 1 == 0));
+
+      let array = [];
+      let newArray = [];
+      for (i = 0; i < length; i++) {
+        array.push(+prompt("Nhap phan tu thu " + i));
+      }
+      document.write("Mang bao gom: [" + array + "]" + "<br>");
+
+      function getNumber(array, newArray) {
+        let num = +prompt("Nhap so bi chia");
+        for (i = 0; i < length; i++) {
+          if (array[i] % num == 0) {
+          newArray.push(array[i]);
+        }
+     
+        document.write(newArray);
+        document.write(newArray.length); 
+      }
+      getNumber(array,newArray);
+    </script>
+  </body>
+</html>

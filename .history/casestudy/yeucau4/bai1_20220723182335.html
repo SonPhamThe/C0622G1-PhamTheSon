@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 1</title>
+  </head>
+  <body>
+    <!-- Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI => Truong Tan Hai. -->
+    <!-- Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó -->
+
+    <script>
+      let rootString = prompt("Nhap xau ki tu can chuan hoa");
+
+      function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+      }
+
+      function formatString(rootString) {
+        let formattedString;
+        let rootCharacterArray = rootString.split(" ");
+        // console.log("1");
+        // console.log(rootCharacterArray)
+        let withoutSpaceArray = rootCharacterArray.filter(
+          function(item) {
+            return item !== "";
+          }
+        )
+        // console.log("2");
+        // console.log(withoutSpaceArray);
+        withoutSpaceArray = withoutSpaceArray.map(function(item) {
+          // console.log("Capitalizing... " + capitalizeFirstLetter(item))
+          return capitalizeFirstLetter(item);
+        });
+        // console.log("3: " + withoutSpaceArray);
+        // console.log(withoutSpaceArray);
+        return withoutSpaceArray.join(" ");
+      }
+      let formattedString = formatString(rootString);
+
+      function getMaxLengthWordFromString(rootString) {
+
+      }
+
+      console.log(formatString(rootString));
+    </script>
+  </body>
+</html>

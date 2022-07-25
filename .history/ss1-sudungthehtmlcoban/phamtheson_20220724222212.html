@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let length;
+      do {
+        if (!(length > 0 && length % 1 == 0)) {
+          alert("Nhap lai");
+        }
+      } while (!(length > 0 && length % 1 == 0));
+
+      let array = [];
+      for (i = 0; i < length; i++) {
+        array.push(+prompt("Nhap phan tu thu " + i));
+      }
+      document.write("Mang bao gom: [" + array + "]");
+
+      function checkNumber(array) {
+        let indexMax = 0;
+        let indexMin = 0;
+        let max = array[0];
+        let min = array[0];
+        for (i = 0; i < length; i++) {
+          if (max < array[i]) {
+            max = array[i];
+            indexMax = i;
+          }
+          if (min > array[i]) {
+            min = array[i];
+            indexMin = i;
+          }
+        }
+        document.write(max +"tai vi tri"+indexMax);
+        document.write(min+"tai vi tri"+i)
+      }
+    </script>
+  </body>
+</html>
