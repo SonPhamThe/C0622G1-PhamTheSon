@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 4</title>
+  </head>
+  <body>
+    <script>
+      let inputString = prompt("Nhập chuỗi là một câu có nghĩa");
+    let inputArray = inputString.split(' ');
+    alert (inputArray);
+    document.write("Chuỗi nhập vào là: "+inputString+"<br>");
+    let count = 0;
+    for (let i = 0; i < inputArray.length; i++) {
+        if (inputArray[i].length === 1 || inputArray[i]===""){
+            count++;
+        }
+    }
+    document.write("Số từ trong chuỗi nhập vào là: "+(inputArray.length-count));
+    </script>
+  </body>
+</html>

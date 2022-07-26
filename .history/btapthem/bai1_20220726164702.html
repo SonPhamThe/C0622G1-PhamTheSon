@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let length = +prompt("Nhập độ dài của mảng");
+      let arr = [];
+      let total = 0;
+      let total1 = 0;
+      while (length > 50 || length < 0) {
+        alert("Nhập lại");
+        length = +prompt("Nhập độ dài của mảng");
+      }
+      for (i = 0; i < length; i++) {
+        arr.push(+prompt("Nhập một số nguyên bất kì"));
+        if (i % 2 == 0) {
+          total += arr[i];
+        } else if (i % 2 != 0) {
+          total1 += arr[i];
+        }
+        
+      }
+      document.write("Mảng ban đầu được tạo là: " + arr);
+      document.write("Tổng các số ở vị trí chẵn - các số ở vị trí lẻ là: "+);
+    </script>
+  </body>
+</html>

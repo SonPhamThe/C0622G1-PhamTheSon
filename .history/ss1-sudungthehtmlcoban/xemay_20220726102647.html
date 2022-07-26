@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class xeMay {
+        constructor(bienKS, chuSoHuu, hangXe) {
+          this.bienKS = bienKS;
+          this.chuSoHuu = chuSoHuu;
+          this.hangXe = hangXe;
+        }
+        setBienKS(bienKS) {
+          this.bienKS = bienKS;
+        }
+        setChuSoHuu(chuSoHuu) {
+          this.chuSoHuu = chuSoHuu;
+        }
+        setHangXe(hangXe) {
+          this.hangXe = hangXe;
+        }
+        getBienKS() {
+          return this.bienKS;
+        }
+        getChuSoHuu() {
+          return this.chuSoHuu;
+        }
+        getHangXe() {
+          return this.hangXe;
+        }
+      }
+      let xe1 = new xeMay("43G1-41424","Phạm Thế Sơn","Airblade")
+      let xe2 = new xeMay("74G1-51525","Hoàng Đức Danh","Attila")
+      let xe3 = new xeMay("00-61626","Phạm Quang Vinh","Airblade")
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let length;
+      let array = [];
+      do {
+        length = +prompt("Nhập độ dài của mảng");
+        if (length > 50 || length <= 0) {
+          alert("Nhập lại");
+        }
+      } while (length > 50 || length <= 0);
+      for (let i = 0; i < length; i++) {
+        let newArray = [];
+        let total = 0
+        array.push(+prompt("Nhập phần tử thứ: " + i));
+        if (i % 3 == 0 && array[i] % 5 == 0) {
+          newArray.push(array[i]);
+          total += array[i]
+        }
+      }
+      document.write("Mảng sau khi thêm phần tử là: "+array);
+      document.write("Mảng các số chia hết cho 5 là: "+newArray)
+      document.write("Kết quả trung bình các phần tử chia hết cho 5 tại vị trí chia hết cho 3 là: "+)
+    </script>
+  </body>
+</html>

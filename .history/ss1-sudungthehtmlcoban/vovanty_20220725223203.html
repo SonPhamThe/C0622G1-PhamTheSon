@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // Nhập một mảng bất kì chứa tập hợp các số nguyên. Tìm giá trị lớn nhất và nhỏ nhất, và in ra vị trí của các giá trị đó trong mảng.
+      let number;
+      do {
+        number = parseInt(prompt("nhập độ dài mảng"));
+        if (!(number > 0 && number % 1 === 0)) {
+          alert("nhap lai");
+        }
+      } while (!(number > 0 && number % 1 === 0));
+
+      let array = [];
+      for (let i = 0; i < number; i++) {
+        array[i] = parseInt(prompt("nhập phần tử " + i));
+      }
+      document.write("mảng vừa nhập là: " + array + "<br>");
+
+      function checkNumber(array) {
+        let max = array[0];
+        let min = array[0];
+        let arrayA = [];
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] > max) {
+            max = array[i];
+          }
+          if (array[i] < min) {
+            min = array[i];
+          }
+        }
+        document.write("max là: " + max + "<br>");
+        document.write("min là: " + min + "<br>");
+        arrayA.push(array.indexOf(max));
+        arrayA.push(array.indexOf(min));
+        return arrayA;
+      }
+
+      document.write("vị trí là" + checkNumber(array));
+    </script>
+  </body>
+</html>

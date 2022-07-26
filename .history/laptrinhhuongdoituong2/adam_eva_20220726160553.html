@@ -1,0 +1,111 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam va Eva</title>
+  </head>
+  <body>
+    <script>
+      class Apple {
+        constructor(weight) {
+          this.weight = 10;
+        }
+        getWeight() {
+          return this.weight;
+        }
+        isEmpty() {
+          if (this.weight > 0) {
+            return false;
+          } else return true;
+        }
+        decrease() {
+          this.weight--;
+        }
+      }
+      class Human {
+        constructor(name, gender, weight) {
+          this.name = name;
+          this.gender = gender;
+          this.weight = weight;
+        }
+        getName() {
+          return this.name;
+        }
+        setName(name) {
+          return this.name;
+        }
+        isMale() {
+          if (this.gender == "male") {
+            document.write(this.name + " is man" + "<br>" + "<br>");
+          } else document.write(this.name + " is woman" + "<br>" + "<br>");
+        }
+        setGender(gender) {
+          this.gender = gender;
+        }
+        say(string) {
+          console.log(string);
+        }
+        checkApple(Apple) {
+          if (!Apple.isEmpty()) {
+            return true;
+          } else document.write("Tao da het");
+          return false;
+        }
+        getWeight() {
+          return this.weight;
+        }
+        getWeight() {
+          this.weight++;
+        }
+        eat(Apple) {
+          if (this.checkApple(Apple)) {
+            Apple.decrease();
+          }
+          this.setWeight();
+        }
+      }
+      let apple = new Apple();
+      let person1 = new Human("Adam", "male", 60);
+      let person2 = new Human("Eva", "woman", 45);
+      person1.say("Xin chao toi la Adam");
+      person1.isMale();
+      person2.say("Xin chao toi la Eva");
+      person2.isMale();
+      while (person1.checkApple(apple)) {
+        person1.eat(apple);
+        document.write(
+          person1.getName() +
+            " an tao " +
+            "<br>" +
+            "Tao con " +
+            apple.weight +
+            " Don vi" +
+            "<br>" +
+            "Can nang cua " +
+            person1.name +
+            " la:" +
+            person1.getWeight() +
+            "<br>" +
+            "<br>"
+        );
+        person2.eat(apple);
+        document.write(
+          person2.getName() +
+            " an tao" +
+            "<br>" +
+            "Tao con " +
+            apple.weight +
+            " Don vi" +
+            "<br>" +
+            "Can nang cua " +
+            person2.name +
+            " la:" +
+            person2.getWeight() +
+            "<br>" +
+            "<br>"
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 3, 5, 6, 7, 13, 15, 17, 28, 56];
+      let arrayFibonacci = [];
+      let max = 0
+      function checkFibonacci(array) {
+        for (i = 0; i < array.length; i++) {
+          max
+        }
+      }
+      function getFibonacci(number) {
+        let number1 = 0,
+          number2 = 0,
+          number3 = 0;
+        let fibonacci = "";
+        for (let i = 1; i < 21; i++) {
+          if (i == 1) {
+            number2 = 1;
+            number3 = 1;
+            fibonacci += number3 + "";
+            console.log(i + "=" + fibonacci);
+          } else {
+            number3 = number1 + number2;
+            number1 = number2;
+            number2 = number3;
+            fibonacci += number3 + "";
+            console.log(i + "=" + number3);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

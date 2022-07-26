@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 3</title>
+  </head>
+  <body>
+    <script>
+      let length = +prompt("Nhap do dai cua mang: ");
+      let mang = [];
+      let mang1 = []
+      let count = 0;
+      for (let i = 0; i < length; i++) {
+        mang.push(prompt("Nhap mot phan tu bat ki"));
+        if (mang[i] % 1 ==0) {
+          count++;
+        }
+      }
+      document.write("Mang bao gom cac phan tu: " + mang + "<br>");
+      document.write("Các ký tự số trong mảng là " + count + " số<br>");
+    </script>
+  </body>
+</html>

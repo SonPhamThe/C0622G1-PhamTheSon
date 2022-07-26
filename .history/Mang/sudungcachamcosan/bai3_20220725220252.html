@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 3</title>
+  </head>
+  <body>
+    <script>
+      let chuoi = prompt("Nhập vào một chuỗi");
+      let chuHoa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let chuThuong = "abcdefghijklmnopqrstuvwxyz";
+      let ketqua = [];
+      for (let i = 0; i < chuoi.length; i++) {
+        if (chuHoa.indexOf(chuoi[i]) !== -1) {
+          ketqua.push(chuoi[i].toLowerCase());
+        } else if (c.indexOf(chuoi[i] !== -1)) {
+          ketqua.push(chuoi[i].toUpperCase());
+        } else {
+          ketqua.push(chuoi[i]);
+        }
+      }
+      alert(ketqua.join(""));
+    </script>
+  </body>
+</html>

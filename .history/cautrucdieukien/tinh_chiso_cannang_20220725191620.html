@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng</title>
+</head>
+<body>
+<p>Height (m)</p>
+<input type="number" id="height"/>
+<p>Weight (kg)</p>
+<input type="number" id="weight"/> <br> <br>
+<button style="background: yellow" onclick="cal()">Calculate</button>
+<script>
+    function cal() {
+        let height1 = document.getElementById("height").value;
+        let weight1 = document.getElementById("weight").value;
+            // height1 = parseInt(height1);
+            // weight1 = parseInt(weight1);
+        let BMI = weight1/(height1*he);
+        if(BMI<18.5) {
+            alert("Bạn hơi gầy cần ăn 1 ngày 5 bữa");
+        } else if(BMI<25.0) {
+            alert("Bạn bình thường");
+        } else if(BMI<30.0) {
+            alert("Bạn mập quá nên giảm cân gấp!");
+        } else {
+            alert("Bạn đang trong giai đoạn béo phì, nên điều chỉnh gấp!");
+        }
+    }
+</script>
+</body>
+</html>

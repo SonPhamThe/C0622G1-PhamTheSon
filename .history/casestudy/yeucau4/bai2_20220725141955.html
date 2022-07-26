@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai 2</title>
+  </head>
+  <body>
+    <!-- Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó
+Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó -->
+    <!-- Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3. -->
+    <script>
+      let inputString = prompt("Nhap mot chuoi bat ki");
+      let count = 1;
+      let existedCharacters = [inputString[0]];
+      document.write(existedCharacters);
+      for (let i = 1; i < inputString.length; i++) {
+        if (!existedCharacters.includes(inputString[i])) {
+          count++;
+          existedCharacters.push(inputString[i]);
+        }
+      }
+      document.write(count);
+      document.write(inputString);
+    </script>
+  </body>
+</html>

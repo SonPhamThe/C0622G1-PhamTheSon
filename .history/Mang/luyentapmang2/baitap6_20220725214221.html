@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 6</title>
+  </head>
+  <body>
+    <script>
+      let amount = +prompt("Số lượng phần từ cần nhập")
+    let inputArray = [];
+    for (let i = 0; i < amount; i++) {
+        inputArray[i] = prompt("Nhập phần tử tại vị trí "+i);
+    }
+    document.write("Mảng khởi tạo là: ["+inputArray+"]"+"<br>"+"<br>")
+    for (let i = 0; i < amount ; i++) {
+        if(inputArray[i]=== "-") {
+            inputArray[i] = "_"
+        }
+    }
+    document.write("Mảng thay thế là: ["+inputArray+"]");
+    </script>
+  </body>
+</html>
