@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let inputArray = [1, 3, 4, 13, 57, 28, 9, 0, 2];
+      let max = 0;
+      function getFibonacciInArray(array) {
+        for (i = 0; i < array.length; i++) {
+          if (max < array[i]) {
+            max = array[i];
+          }
+        }
+        document.write(max);
+      }
+      function numberFibonacci(number) {
+        let arr = [0];
+        let num1 = 0;
+        let num2 = 1;
+        let num = 0;
+        while (num < max) {
+          num = num1 + num2;
+          arr.push(num);
+          num1 = num2;
+          num2 = num;
+        }
+        document.write(arr);
+      }
+      getFibonacciInArray(inputArray);
+      numberFibonacci(number);
+    </script>
+  </body>
+</html>
